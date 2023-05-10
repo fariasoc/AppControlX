@@ -5,6 +5,12 @@ import { VStack, HStack, Heading, Icon, useTheme, Text, IconButton } from 'nativ
 import { useNavigation } from '@react-navigation/native';
 import { At, Key, Password, UserCirclePlus } from 'phosphor-react-native';
 
+import React from 'react';
+import { KeyboardAvoidingView, Platform } from 'react-native';
+
+import signInAnimation from '../assets/animations/signin.json';
+import { Lottie } from  '../components/Lottie';
+
 import Logo from '../assets/3.svg';
 
 import { Input } from '../components/Input';
@@ -53,10 +59,10 @@ export function SignIn() {
   }
 
   return (
-    <VStack flex={1} alignItems="center" bg="gray.600" px={8} pt={24}>
-      <Logo height={100} width={100} />
+    <VStack flex={1} alignItems="center" bg="gray.600" px={8} pt={8}>
+      <Lottie source={signInAnimation} />
 
-      <Heading color="gray.100" fontSize="xl" mt={10} mb={6}>
+      <Heading color="gray.100" fontSize="xl" mt={1} mb={6}>
         Acesse sua conta
       </Heading>
 
