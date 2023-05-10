@@ -8,7 +8,7 @@ import { SignOut, Plus, ChatTeardropText, FileArrowDown, Printer } from 'phospho
 
 import { dateFormat } from '../utils/firestoreDateFormat';
 
-//import Logo from '../assets/3.svg';
+import Logo from '../assets/3.svg';
 
 import { Filter } from '../components/Filter';
 import { Button } from '../components/Button';
@@ -85,8 +85,9 @@ export function Home() {
         pb={1}
         px={6}
       >
+        
 
-        <Heading color="white">Controle Patrimonial </Heading>
+        <Heading color="white">  Controle Patrimonial </Heading>
 
         <IconButton
           icon={<SignOut size={20} color={colors.white} />}
@@ -96,7 +97,7 @@ export function Home() {
 
       <VStack flex={1} px={6}>
         <HStack w="full" mt={4} mb={4} justifyContent="space-between" alignItems="center">
-          <Heading size="md" color="gray.100" >
+          <Heading size="md" color="gray.100" > 
             Equipamentos
           </Heading>      
 

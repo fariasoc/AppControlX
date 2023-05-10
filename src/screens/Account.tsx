@@ -36,7 +36,7 @@ export function Account() {
 
   const initialFocusRef = React.useRef(null);
   return <Box w="100%" alignItems="center">
-      <Popover initialFocusRef={initialFocusRef} trigger={triggerProps => {
+      <Popover  initialFocusRef={initialFocusRef} trigger={triggerProps => {
       return  <IconButton 
                 {...triggerProps}
                 icon={<UserCirclePlus size={32} color="white" />}  
@@ -51,7 +51,7 @@ export function Account() {
           <Popover.Header bg="dark.100" color="white" _text={{
             color: "white"
           }}>Criar uma conta</Popover.Header>
-          <Popover.Body bg="dark.100">
+          <Popover.Body bg="dark.100" >
             <FormControl bg="dark.100">
               <FormControl.Label _text={{
               fontSize: "xs",
